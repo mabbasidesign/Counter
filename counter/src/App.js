@@ -1,18 +1,23 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+
+  state = {
+    counters: [
+        { id: 1, value: 4 },
+        { id: 2, value: 1 },
+        { id: 3, value: 0 },
+        { id: 4, value: 0 },
+    ]
+  }
+
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      
+      <div>
+        <h1 className="badge badge-warning"> Counter </h1>
       </div>
     );
   }
