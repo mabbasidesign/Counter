@@ -3,16 +3,7 @@ import React, { Component } from 'react';
 class Counter extends Component {
     state = {
 
-        counters: [
-            { id: 1, value: 4 },
-            { id: 2, value: 1 },
-            { id: 3, value: 0 },
-            { id: 4, value: 0 },
-        ],
-
         count: 0,
-
-        tags: ['tag1', 'tag2', 'tag3']
      }
 
      getClasses(){
